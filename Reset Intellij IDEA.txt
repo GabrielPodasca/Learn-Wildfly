@@ -1,0 +1,15 @@
+o Reset Intellij (Latest-2019.3.2) evaluation period on Linux::
+
+remove file(s) present under ~/.IntelliJIdea2019.3/config/eval
+remove line contains evl in other.xml present inside ~/.IntelliJIdea2019.3/config/options
+Delete folder named with random number inside ~/.java/.userPrefs/jetbrains/idea/
+** Do this on every month, To continue use of Intellij Ultimate version for free
+
+
+To reset key on Windows delete those files
+
+C:\Users\<username>\.IntelliJIdea<version>\config\eval\idea<version>.key
+
+C:\Users\<username>\.IntelliJIdea<version>\config\option\other.xml
+
+HKEY_CURRENT_USER\Software\JavaSoft (in registry editor)
