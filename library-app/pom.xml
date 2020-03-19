@@ -29,6 +29,38 @@
 		</plugins>
 	</build>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.8.6</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.resteasy</groupId>
+				<artifactId>resteasy-client</artifactId>
+				<version>4.3.1.Final</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.skyscreamer</groupId>
+				<artifactId>jsonassert</artifactId>
+				<version>1.5.0</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.library</groupId>
+				<artifactId>library-model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.library</groupId>
+				<artifactId>library-model</artifactId>
+				<version>${project.version}</version>
+				<type>test-jar</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
 		<dependency>
@@ -77,5 +109,6 @@
   
 	<modules>
 		<module>library-model</module>
+		<module>library-resource</module>
 	</modules>
 </project>
